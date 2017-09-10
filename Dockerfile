@@ -11,5 +11,8 @@ RUN set -eux; \
                 libffi-dev \
                 openssl-dev \
         ; \
-        pip install fabric; \
+        pip install \
+                docker-compose \
+                fabric; \
+        docker-compose version; \
         fab --version
